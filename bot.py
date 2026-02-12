@@ -9,10 +9,11 @@ from aiogram.types import WebAppInfo, InlineKeyboardMarkup, InlineKeyboardButton
 logging.basicConfig(level=logging.INFO)
 
 # ТВОИ ДАННЫЕ
-# (Лучше брать их из переменных окружения, но для начала можно и так)
-BOT_TOKEN = os.getenv("BOT_TOKEN") # Сервер сам подставит токен отсюда
+
+# Бот ищет токен в переменных окружения сервера
+bot = Bot(token=os.getenv("BOT_TOKEN")) # Сервер сам подставит токен отсюда
 # Ссылка на твой GitHub Pages (ОБЯЗАТЕЛЬНО HTTPS)
-WEBAPP_URL = "https://твой-ник.github.io/название-репозитория/" 
+WEBAPP_URL = "https://github.com/Deployeeez/14-.git" 
 
 # Инициализация бота
 bot = Bot(token=BOT_TOKEN)
@@ -37,4 +38,5 @@ async def main():
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
+
     asyncio.run(main())
