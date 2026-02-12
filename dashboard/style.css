@@ -1,0 +1,55 @@
+body {
+  background-color: #f9e3e3; /* Нежно-розовый фон */
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+}
+
+h1, h2 {
+  color: #d32f2f !important; /* Красные заголовки */
+}
+
+.love-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(211, 47, 47, 0.15); /* Красная тень */
+  transition: all 0.3s ease;
+  border: none;
+  color: #333;
+}
+
+.love-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(211, 47, 47, 0.25);
+}
+
+.highlight {
+  color: #d32f2f; /* Красные цифры */
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.heart {
+  color: #d32f2f;
+  animation: pulse 1.5s infinite;
+  display: inline-block;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+footer p {
+    color: #d32f2f;
+    opacity: 0.7;
+}
+
+/* Переопределение цветов Tailwind */
+.text-pink-400 {
+    color: #d32f2f !important;
+}
+.text-gray-500 {
+    color: #666 !important;
+}
