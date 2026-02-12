@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Михаил & Валерия</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container mx-auto px-4 py-8">
+      <header class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          Михаил <span class="heart">❤</span> Валерия
+        </h1>
+        <p class="text-xl text-pink-400">Наша история любви с 17.09.2022</p>
+      </header>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div class="love-card rounded-xl p-6">
+          <h2 class="text-2xl font-bold mb-4 text-center">Мы вместе уже</h2>
+          <div class="space-y-2">
+            <p><span class="highlight" id="love-years">0</span> лет</p>
+            <p><span class="highlight" id="love-days">0</span> дней</p>
+            <p><span class="highlight" id="love-hours">0</span> часов</p>
+            <p><span class="highlight" id="love-minutes">0</span> минут</p>
+            <p><span class="highlight" id="love-seconds">0</span> секунд</p>
+          </div>
+        </div>
+
+        <div class="love-card rounded-xl p-6">
+          <h2 class="text-2xl font-bold mb-4 text-center">До годовщины</h2>
+          <div class="space-y-2">
+            <p><span class="highlight" id="anniv-days">0</span> дней</p>
+            <p><span class="highlight" id="anniv-hours">0</span> часов</p>
+            <p><span class="highlight" id="anniv-minutes">0</span> минут</p>
+            <p><span class="highlight" id="anniv-seconds">0</span> секунд</p>
+          </div>
+        </div>
+
+        <div class="love-card rounded-xl p-6">
+          <h2 class="text-2xl font-bold mb-4 text-center">ДР Михаила</h2>
+          <p class="mb-4 text-center text-gray-500">16 сентября (2006)</p>
+          <div class="space-y-2">
+            <p><span class="highlight" id="aathil-days">0</span> дней</p>
+            <p><span class="highlight" id="aathil-hours">0</span> часов</p>
+            <p><span class="highlight" id="aathil-minutes">0</span> минут</p>
+          </div>
+        </div>
+
+        <div class="love-card rounded-xl p-6">
+          <h2 class="text-2xl font-bold mb-4 text-center">ДР Валерии</h2>
+          <p class="mb-4 text-center text-gray-500">7 ноября (2006)</p>
+          <div class="space-y-2">
+            <p><span class="highlight" id="ducky-days">0</span> дней</p>
+            <p><span class="highlight" id="ducky-hours">0</span> часов</p>
+            <p><span class="highlight" id="ducky-minutes">0</span> минут</p>
+          </div>
+        </div>
+
+        <div class="love-card rounded-xl p-6">
+          <h2 class="text-2xl font-bold mb-4 text-center">Начало отношений</h2>
+          <p class="text-lg mb-2 text-center">Дата:</p>
+          <p class="highlight text-center">17 сентября 2022</p>
+          <p class="text-lg mt-4 mb-2 text-center">Время:</p>
+          <p class="highlight text-center">Навсегда ❤️</p>
+        </div>
+
+        <div class="love-card rounded-xl p-6 flex items-center justify-center">
+          <div class="text-center">
+            <p class="text-2xl mb-4">Каждый момент с тобой — особенный</p>
+            <span class="heart text-4xl">❤</span>
+          </div>
+        </div>
+      </div>
+
+      <footer class="text-center text-gray-400 mt-12">
+        <p>С любовью, Михаил</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
